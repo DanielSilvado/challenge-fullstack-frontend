@@ -9,6 +9,8 @@ import {
   TableRow,
 } from '@material-ui/core';
 
+import Pagination from './pagination/pagination';
+
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import ArchiveIcon from '@material-ui/icons/Archive';
 import CreateIcon from '@material-ui/icons/Create';
@@ -38,13 +40,11 @@ function TableList(props) {
         <TableBody>
           {props.usersFiltered.map((row, index) => (
             <TableRow
-              hover
-              role="checkbox"
-              tabIndex={-1}
               style={{
                 backgroundColor: index % 2 === 0 ? '#e9e9e9' : '#f5f5f5',
               }}
             >
+              {/* <div className="overlay"></div> */}
               <TableCell>
                 <Checkbox checked={false} />
               </TableCell>
@@ -57,7 +57,7 @@ function TableList(props) {
                 {row.status}
               </TableCell>
 
-              <TableCell align="center" className="selectedRow">
+              <TableCell align="center">
                 <IconButton size="small">
                   <DeleteIcon />
                 </IconButton>
@@ -81,6 +81,9 @@ function TableList(props) {
           ))}
         </TableBody>
       </Table>
+
+      <Pagination />
+      
     </div>
   );
 }

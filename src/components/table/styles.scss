@@ -1,7 +1,9 @@
 .containerTable {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+
   padding: 50px;
   min-width: 750px;
 }
@@ -12,9 +14,17 @@
   -webkit-box-shadow: 5px 0px 20px -2px #c1c1c1;
 }
 
-.selectedRow{
-  opacity: 1;
+.overlay {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  width: calc(100% - 100px);
+  min-width: 750px;
 
-  .clicked{
-  }
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 72px;
+  position: absolute;
+  z-index: 10;
+  border-bottom: 4px solid blueviolet;
 }
