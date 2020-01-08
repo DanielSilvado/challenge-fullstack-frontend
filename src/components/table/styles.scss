@@ -1,0 +1,20 @@
+.containerTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  min-width: 750px;
+}
+
+.contentTable {
+  box-shadow: 5px 0px 20px -2px #c1c1c1;
+  -moz-box-shadow: 5px 0px 20px -2px #c1c1c1;
+  -webkit-box-shadow: 5px 0px 20px -2px #c1c1c1;
+}
+
+.selectedRow{
+  opacity: 1;
+
+  .clicked{
+  }
+}

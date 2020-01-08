@@ -1,10 +1,12 @@
 import React from 'react';
-import Header from './components/header/index.js';
+
+import TableUsers from './pages/TableUser';
+
 import './styles/Reset.scss';
 import './styles/Base.scss';
 
-function App() {
-  return <Header />;
+const App = () => {
+  return <TableUsers />;
 }
 
 export default App;

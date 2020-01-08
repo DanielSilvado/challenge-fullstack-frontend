@@ -12,8 +12,13 @@ import CloseIcon from '@material-ui/icons/Close';
 
 import './styles.scss';
 
-function Header() {
+function Header(props) {
   const [open, setOpen] = useState(false);
+
+  const handleChange = (e) => {
+    props.changeFilter(e.target.value)
+  }
+
 
   const MenuFilter = () => {
     return (
@@ -56,6 +61,7 @@ function Header() {
           <InputBase
             style={{ paddingLeft: '15px' }}
             placeholder="Pesquisar..."
+            onChange={handleChange}
           />
           <IconButton type="submit">
             <SearchIcon />
