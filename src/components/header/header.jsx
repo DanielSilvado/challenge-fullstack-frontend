@@ -79,7 +79,6 @@ function Header(props) {
         <Button
           variant="contained"
           onClick={() => setOpen(true)}
-          color="#ffffff"
           className="btnTune"
         >
           <TuneIcon />
@@ -105,6 +104,7 @@ function Header(props) {
         <IconButton>
           <PowerSettingsNewIcon />
         </IconButton>
+        
       </div>
     </header>
   );

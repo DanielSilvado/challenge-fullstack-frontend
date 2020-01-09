@@ -43,8 +43,9 @@ function TableList(props) {
               style={{
                 backgroundColor: index % 2 === 0 ? '#e9e9e9' : '#f5f5f5',
               }}
+              className="row"
             >
-              {/* <div className="overlay"></div> */}
+              <div className="overlay"></div>
               <TableCell>
                 <Checkbox checked={false} />
               </TableCell>
@@ -57,7 +58,7 @@ function TableList(props) {
                 {row.status}
               </TableCell>
 
-              <TableCell align="center">
+              <TableCell align="center" className="utils">
                 <IconButton size="small">
                   <DeleteIcon />
                 </IconButton>
@@ -83,7 +84,7 @@ function TableList(props) {
       </Table>
 
       <Pagination />
-      
+
     </div>
   );
 }
