@@ -13,6 +13,7 @@
 ### Instalação
 
 **- Se estiver utilizando Yarn**
+
 ```
   Todos os comandos abaixo devem ser excutados na raiz do Projeto 
   Para instalar as dependências:
@@ -27,6 +28,7 @@
 ```
 
 **- Se estiver utilizando npm**
+
 ```
   Todos os comandos abaixo devem ser excutados na raiz do Projeto 
   Para instalar as dependências:
@@ -37,10 +39,9 @@
   
   Executa o aplicativo no modo de desenvolvimento.
   Abra http: // localhost: 3000 para visualizá-lo no navegador. 
-
 ```
 
-Licença
+###Licença
 ----
 **Daniel Silvado Grisólia** @DanielSilvado
 
