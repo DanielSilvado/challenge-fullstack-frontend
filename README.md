@@ -1,6 +1,6 @@
 ## Desafio FullStack - FrontEnd 
 
-# Tecnologias Utilizadas :
+### Tecnologias Utilizadas :
 
 * ReactJs
 * Material ui
@@ -10,7 +10,7 @@
 * ESLint
 * Prettier
 
-# Instalação
+### Instalação
 
 **- Se estiver utilizando Yarn**
 ```
