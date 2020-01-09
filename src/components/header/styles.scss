@@ -35,11 +35,11 @@
     .btnDefender {
       width: 50px;
       height: 50px;
+      background-color: #fff;
     }
 
     .btnPerson {
-      width: 50px;
-      height: 50px;
+      padding: 15px;
       background: #8a2387;
       background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
       background: linear-gradient(to right, #f27121, #e94057, #8a2387);
@@ -61,14 +61,14 @@
     margin-right: 50px;
 
     .btnTune {
-      width: 50px;
-      height: 50px;
+      padding: 15px;
+      background-color: #fff;
     }
 
     .btnInclude {
-      height: 50px;
+      padding: 15px;
       margin-left: 25px;
-      background-color: #A73B5F;
+      background-color: #a73b5f;
     }
   }
 }
@@ -78,8 +78,8 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 400px;
-  height: 100px;
+  width: 500px;
+  min-height: 100px;
   padding: 0 25px;
 
   box-shadow: 0 4px 4px -2px #c1c1c1;
@@ -97,7 +97,35 @@
   }
 
   .btnClose {
-    height: 50px;
+    padding: 15px;
     margin-left: 25px;
+    background-color: #fff;
+  }
+}
+
+.contentFilter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  max-width: 500px;
+  min-height: 100%;
+  padding: 40px 25px 0 25px;
+  background-color: #f1eded;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #474646;
+    flex-direction: column;
+    font-style: italic;
+  }
+  .trace {
+    margin-top: 10px;
+    height: 3px;
+    width: 25px;
+    background-color: #807e7e;
   }
 }

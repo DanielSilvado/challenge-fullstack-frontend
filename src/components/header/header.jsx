@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import { Button, InputBase, IconButton, Drawer } from '@material-ui/core';
+
 import WavesRoundedIcon from '@material-ui/icons/WavesRounded';
 import SecurityIcon from '@material-ui/icons/Security';
 import PersonIcon from '@material-ui/icons/Person';
@@ -15,10 +17,9 @@ import './styles.scss';
 function Header(props) {
   const [open, setOpen] = useState(false);
 
-  const handleChange = (e) => {
-    props.changeFilter(e.target.value)
-  }
-
+  const handleChange = e => {
+    props.changeFilter(e.target.value);
+  };
 
   const MenuFilter = () => {
     return (
@@ -32,11 +33,17 @@ function Header(props) {
           <Button
             variant="contained"
             onClick={() => setOpen(false)}
-            color="#ffffff"
             className="btnClose"
           >
             <CloseIcon />
           </Button>
+        </div>
+        <div className="contentFilter">
+          <p>
+            Utilize os filtros abaixo para refinar os resultados da tabela,
+            clique no botão APLICAR para salvar as alterações.
+            <span className="trace"></span>
+          </p>
         </div>
       </Drawer>
     );
@@ -47,14 +54,14 @@ function Header(props) {
       {open ? <MenuFilter /> : null}
       <div className="containerLeft">
         <Button className="btnLogo">
-          <WavesRoundedIcon style={{ color: '#fff' }}></WavesRoundedIcon>
+          <WavesRoundedIcon style={{ color: '#fff' }} />
         </Button>
         <span className="division"></span>
         <Button className="btnDefender">
-          <SecurityIcon style={{ color: '#292929' }}></SecurityIcon>
+          <SecurityIcon style={{ color: '#292929' }} />
         </Button>
         <Button className="btnPerson">
-          <PersonIcon style={{ color: '#fff' }}></PersonIcon>
+          <PersonIcon style={{ color: '#fff' }} />
         </Button>
 
         <div className="containerSearch">
