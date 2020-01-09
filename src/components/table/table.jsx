@@ -26,6 +26,7 @@ function TableList(props) {
         <TableHead>
           <TableRow>
             <TableCell align="center"></TableCell>
+            <TableCell align="center"></TableCell>
             <TableCell align="left">USUÁRIO</TableCell>
             <TableCell align="left">EMAIL</TableCell>
             <TableCell align="center">DATA DE INCLUSÃO</TableCell>
