@@ -1,26 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
-$colorPrimary: #ec008c;
-$colorSecundary: #000000;
-$colorTertiary: #fcf6f6;
-$colorDisabled: #b8b8b8;
-$colorWhite: #fff;
-$colorPlaceholder: #505050;
-$colorError: #ffaaaa;
-
 * {
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
 }
-
-// .container {
-//   width: 1280px;
-//   margin: 0 auto;
-
-//   @media (max-width: 1280px) {
-//     width: 90%;
-//   }
-// }
 
 body {
   font-family: 'Roboto', sans-serif;

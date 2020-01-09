@@ -42,7 +42,7 @@ function TableList(props) {
           {props.usersFiltered.map((row, index) => (
             <TableRow
               style={{
-                backgroundColor: index % 2 === 0 ? '#e9e9e9' : '#f5f5f5',
+                backgroundColor: index % 2 === 0 ? '#e9e9e9' : '#fefefe',
               }}
               className="row"
             >
